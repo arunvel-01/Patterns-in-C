@@ -16,7 +16,6 @@ int main() {
 Reversed Star Pyramid Pattern:
 
 #include <stdio.h>
-
 int main() {
     int i,j,n;
 	printf("Enter the number of lines: ");
@@ -34,7 +33,6 @@ int main() {
 Number Increasing Pyramid Pattern:
 
 #include <stdio.h>
-
 int main() {
    int i,j,n;
    printf("Enter the number of lines: ");
@@ -53,7 +51,6 @@ Pyramid Pattern with Spaces on Left Side:
 
 
 #include <stdio.h>
-
 int main() {
     int i,j,n;
     printf("Enter the number of lines: ");
@@ -75,7 +72,6 @@ int main() {
 Number Pattern Printing Program:
 
 #include <stdio.h>
-
 int main() {
   int i,j,n;
   printf("Enter the number of lines: ");
@@ -88,5 +84,25 @@ int main() {
   }
     return 0;
 }
+
+Number Triangle Pattern Generator:
+
+#include <stdio.h>
+int main() {
+    int i,j,n;
+    printf("Enter number of lines: ");
+    scanf("%d",&n);
+    int num=1;
+    for(i=1;i<=n;i++){
+        for(j=1;j<=i;j++){
+            printf("%d ",num);
+            num++;
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+
 
 
