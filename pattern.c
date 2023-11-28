@@ -47,8 +47,7 @@ int main() {
     return 0;
 }
 
-Pyramid Pattern with Spaces on Left Side:
-
+Pyramid Pattern With Spaces On Left Side:
 
 #include <stdio.h>
 int main() {
@@ -103,7 +102,7 @@ int main() {
     return 0;
 }
 
-Inverted Pyramid Pattern with Spaces:
+Inverted Pyramid Pattern With Spaces:
 
 #include <stdio.h>
 int main() {
@@ -122,7 +121,7 @@ int main() {
     return 0;
 }
 
-Pyramid star pattern without space:
+Pyramid Star Pattern Without Space:
 
 #include <stdio.h>
 int main() {
@@ -141,7 +140,7 @@ int main() {
     return 0;
 }
 
-Inverted Pyramid star pattern without space:
+Inverted Pyramid Star Pattern Without Space:
 
 #include <stdio.h>
 int main() {
@@ -160,4 +159,32 @@ int main() {
     return 0;
 }
 
+Diamond Star pattern: 
+
+#include <stdio.h>
+int main() {
+    int i,j,space,rows;
+    printf("Enter the number of rows: ");
+    scanf("%d",&rows);
+    for(i=1;i<=rows;i++){
+        for(space=1;space<=rows-i;space++){
+            printf(" ");
+        }
+        for(j=1;j<=2*i-1;j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+        for(i=rows-1;i>=1;i--){
+            for(space=1;space<=rows-i;space++){
+                printf(" ");
+            }
+            for(j=1;j<=2*i-1;j++){
+                printf("*");
+            }
+            printf("\n");
+        }
+
+    return 0;
+}
 
